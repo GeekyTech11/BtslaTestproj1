@@ -20,7 +20,7 @@ steps:
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'template.json'
-    csmParametersFile: 'parameters.json'
+    #csmParametersFile: 'parameters.json'
     deploymentMode: 'Incremental'
 
 #   - script: |
