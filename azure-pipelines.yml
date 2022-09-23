@@ -13,14 +13,13 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial(f4b8c56f-d912-484e-996c-630191cf1a2f)'
+    azureResourceManagerConnection: 'sercontestproj1'
     subscriptionId: 'f4b8c56f-d912-484e-996c-630191cf1a2f'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'rgla'
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'template.json'
-    csmParametersFile: 'parameters.json'
     deploymentMode: 'Incremental'
 # - script: echo Hello, world!
 #   displayName: 'Run a one-line script'
